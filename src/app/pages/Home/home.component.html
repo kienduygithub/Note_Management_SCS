@@ -1,0 +1,53 @@
+<div class="home-wrapper">
+    <div class="list-notes">
+        <div class="title">
+            <h3>Notes</h3>
+        </div>
+        <div class="notes">
+            <note-list></note-list>
+        </div>
+    </div>
+    <div class="labels">
+        <div class="labels-image">
+            <img src="../../../assets/images/bg-home.png" alt="">
+        </div>
+        <h3 class="labels-title">Labels</h3>
+        <div class="labels-list">
+            <div class="form-check">
+                <input id="idAlls" type="radio" name="label" class="form-check-input" value="Alls" (change)="OnChangeLabels($event)" [defaultChecked]="true">
+                <label for="idAlls" class="form-check-label">Alls</label>
+            </div>
+            <div class="form-check">
+                <input id="idWork" type="radio" name="label" class="form-check-input" value="Work" (change)="OnChangeLabels($event)"/>
+                <label for="idWork" class="form-check-label">Work</label>
+            </div>
+            <div class="form-check">
+                <input id="idPersonal" type="radio" name="label" class="form-check-input" value="Personal" (change)="OnChangeLabels($event)"/>
+                <label for="idPersonal" class="form-check-label">Personal</label>
+            </div>
+            <div class="form-check">
+                <input id="idStudy" type="radio" name="label" class="form-check-input" value="Study" (change)="OnChangeLabels($event)"/>
+                <label for="idStudy" class="form-check-label">Study</label>
+            </div>
+            <div class="form-check">
+                <input id="idShopping" type="radio" name="label" class="form-check-input" value="Shopping" (change)="OnChangeLabels($event)"/>
+                <label for="idShopping" class="form-check-label">Shopping</label>
+            </div>
+            <div class="form-check">
+                <input id="idHealth" type="radio" name="label" class="form-check-input" value="Health" (change)="OnChangeLabels($event)"/>
+                <label for="idHealth" class="form-check-label">Health</label>
+            </div>
+            <div class="form-check">
+                <input id="idFinance" type="radio" name="label" class="form-check-input" value="Finance" (change)="OnChangeLabels($event)"/>
+                <label for="idFinance" class="form-check-label">Finance</label>
+            </div>
+            <div class="form-check">
+                <input id="idOther" type="radio" name="label" class="form-check-input" value="Other" (change)="OnChangeLabels($event)"/>
+                <label for="idOther" class="form-check-label">Other</label>
+            </div>
+
+        </div>
+    </div>
+
+    <app-modal-create></app-modal-create>
+</div>

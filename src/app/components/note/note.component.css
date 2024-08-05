@@ -1,0 +1,46 @@
+.note-wrapper {
+    width           : 360px;
+    height          : 140px;
+    background-color: rgba(255, 165, 0, 0.66);
+    margin          : 0px auto;
+    border-radius   : 20px;
+    border          : 1px solid white;
+    box-shadow      : rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing      : border-box;
+    padding         : 20px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    position        : relative;
+}
+
+.title {
+    font-size    : 20px;
+    color        : white;
+    font-weight  : bold;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    width        : 290px;
+}
+
+.short-desc {
+    color: whitesmoke;
+}
+
+.time-ago {
+    color: whitesmoke;
+}
+
+.concerned {
+    width           : 28px;
+    height          : 28px;
+    border-radius   : 50%;
+    background-color: white;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    position        : absolute;
+    top             : 20px;
+    right           : 20px;
+}

@@ -1,0 +1,31 @@
+.note-list-wrapper {
+    padding: 10px 0;
+}
+
+.note-list {
+    display       : flex;
+    flex-direction: column;
+    gap           : 10px;
+    overflow      : hidden;
+}
+
+.note-item {
+    box-sizing: border-box;
+    cursor    : grab;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0.7;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.note-item:last-child {
+    border: none;
+}
+
+.note-list.cdk-drop-list-dragging .note-item:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}

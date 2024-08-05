@@ -1,0 +1,37 @@
+<div class="sidebar-menu-wrapper">
+    <div class="workspace">
+        <h3>WORKSPACE</h3>
+        <ul>
+            <li class = "sidebar-item" routerLinkActive="active" [routerLink]="['/home']">
+                <i class="fa-solid fa-pen-to-square icon"></i>
+                <span>Notes</span>
+                <i class="fas fa-ellipsis-h active-icon"></i>
+            </li>
+            <li class = "sidebar-item" routerLinkActive="active" [routerLink]="['/shared-notes']">
+                <i class="fa-solid fa-cloud icon"></i>
+                <span>Shared</span>
+                <i class="fas fa-ellipsis-h active-icon"></i>
+            </li>
+            <li class = "sidebar-item" routerLinkActive="active" [routerLink]="['/trash-notes']">
+                <i class="fa-solid fa-trash icon"></i>
+                <span>Trash</span>
+                <i class="fas fa-ellipsis-h active-icon"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="user">
+        <h4>USER</h4>
+        <ul>
+            <li class = "sidebar-item" routerLinkActive="active" [routerLink]="['/account']">
+                <i class="fa-solid fa-user icon"></i>
+                <span>Account</span>
+                <i class="fas fa-ellipsis-h active-icon"></i>
+            </li>
+            <li class = "sidebar-item" routerLinkActive="active" [routerLink]="['/settings']">
+                <i class="fa-solid fa-gear icon"></i>
+                <span>Settings</span>
+                <i class="fas fa-ellipsis-h active-icon"></i>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+.header-wrapper {
+    height          : 80px;
+    width           : 100%;
+    background-color: white;
+    display         : flex;
+    align-items     : center;
+    padding         : 0 60px;
+    box-sizing      : border-box;
+    position        : fixed;
+    top             : 0;
+    z-index         : 999;
+}
+
+.brand {
+    min-width  : 160px;
+    width      : 30%;
+    font-size  : 30px;
+    font-style : italic;
+    color      : rgba(255, 165, 0, 1);
+    box-sizing : border-box;
+    font-weight: bold;
+}
+
+
+.account {
+    flex           : 1;
+    min-width      : 180px;
+    display        : flex;
+    align-items    : center;
+    justify-content: end;
+    overflow       : hidden;
+    gap            : 10px;
+}
+
+.account-img {
+    width        : 40px;
+    height       : 40px;
+    border-radius: 10000px;
+    overflow     : hidden;
+    border       : 1px solid white;
+}
+
+.account-img img {
+    width     : 100%;
+    object-fit: cover;
+}
+
+.account-name {}
+
+.search {
+    min-width       : 260px;
+    width           : 30%;
+    background-color: transparent;
+    display         : flex;
+    align-items     : center;
+    position        : relative;
+}
+
+.search .search-btn {
+    box-sizing      : border-box;
+    position        : absolute;
+    right           : 6px;
+    top             : 50%;
+    transform       : translateY(-50%);
+    width           : 30px;
+    height          : 30px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 50%;
+    background-color: orange;
+}
+
+.input-search {
+    width              : 100%;
+    border             : 1px solid transparent;
+    /* box-sizing      : border-box; */
+    padding            : 10px 30px 10px 30px;
+    padding-right      : 100px;
+    border-radius      : 30px;
+    outline            : none;
+    box-shadow         : rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition         : padding 0.3s linear, border 0.3s linear;
+    /* overflow        : hidden; */
+}
+
+.search-icon {
+    /* color: #757575; */
+    color: white;
+}
+
+.input-search:focus {
+    border : 1px solid #f9f9f9;
+    padding: 10px 30px 10px 30px;
+}

@@ -1,0 +1,116 @@
+.home-wrapper {
+    width     : 100%;
+    min-height: 100%;
+    padding   : 90px 10px 20px 270px;
+    display   : flex;
+}
+
+h3 {
+    margin     : 0;
+    font-size  : 30px;
+    font-weight: bold;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.list-notes {
+    min-width: 400px;
+    flex     : 1;
+}
+
+.notes {
+    width: fit-content;
+}
+
+.labels {
+    flex        : 2;
+    padding-left: 20px;
+}
+
+.labels .labels-title {
+    margin-top   : 40px;
+    margin-bottom: 40px;
+}
+
+.labels .labels-list {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+}
+
+.labels .labels-image {
+    margin-top : 79px;
+    width      : 100%;
+    overflow   : hidden;
+    display    : flex;
+    align-items: center;
+}
+
+.labels .labels-image img {
+    width     : 68%;
+    object-fit: cover;
+}
+
+input[type="radio"]:checked {
+    background-color: rgba(255, 165, 0, 0.66);
+    border-color    : white;
+    outline         : none;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
+
+.create-note {
+    position       : fixed;
+    bottom         : 30px;
+    right          : 50px;
+    width          : 40px;
+    height         : 40px;
+    border-radius  : 50%;
+    outline        : none;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.create-note button {
+    width        : 100%;
+    height       : 100%;
+    border       : none;
+    border-radius: 50%;
+    color        : #1f1f1f;
+    outline      : none;
+    font-size    : 20px;
+    transition   : all 0.2s linear;
+}
+
+.create-note button:hover {
+    background-color: rgba(255, 165, 0, 0.66);
+    color           : white;
+}
+
+@media (max-width: 992px) {
+    .labels .labels-list {
+        display              : grid;
+        grid-template-columns: auto;
+        gap                  : 10px;
+        padding              : 10px;
+    }
+
+    .labels .labels-title {
+        margin-top   : 0px;
+        margin-bottom: 40px;
+    }
+
+    .labels .labels-image {
+        display: none;
+    }
+
+    .labels {
+        flex        : 2;
+        padding-left: 0px;
+    }
+}

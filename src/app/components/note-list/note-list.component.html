@@ -1,0 +1,9 @@
+<div class="note-list-wrapper">
+    <div cdkDropList class="note-list"
+        (cdkDropListDropped)="drop($event)"
+    >
+        <note-item *ngFor="let note of list" class="note-item"
+            [_note]="note"  cdkDrag
+        />
+    </div>
+</div>
